@@ -1,0 +1,465 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+  }
+  body {
+    background-color: white;
+  }
+  header {
+    max-height: 70px;
+    position: fixed;
+    z-index: 1;
+    height: 70px;
+    width: 100vw;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header > .nav-logo {
+    width: 70px;
+    flex-grow: 0.05;
+  
+  }
+  
+  header > .nav-logo img {
+    height: 30px;
+    margin-left: 0px;
+  }
+  
+  header > .nav-links {
+    height: 70px;
+    flex-grow: 0.5;
+    margin-left: 50px;
+    /* background-color: blue; */
+  }
+  
+  header > .nav-links nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+  }
+  
+  header > .nav-links nav ul li {
+    list-style: none;
+    margin-right: 30px;
+  }
+  
+  header > .nav-links nav ul li a:hover{
+    color: orange;
+    transition: all 0.1s ease-in-out;
+  }
+  
+  
+  header > .nav-links nav ul li a {
+    text-decoration: none;
+    color: #112f98;
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    cursor: pointer;
+  }
+  
+  header > .nav-extra {
+    height: 70px;
+    width: 70px;
+  
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .nav-extra > input {
+    border: 1px solid #3ca0b8;
+    background-color: rgba(217, 217, 217, 0);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    flex-shrink: 0;
+    padding-right: 5px;
+  }
+  
+  .nav-extra > a button {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-left: 15px;
+    border-radius: 30px;
+    background-color: #3ca0b8;
+    flex-shrink: 0;
+    border: 2px solid #3ca0b8;
+    color: #fff;
+  }
+  
+  .nav-extra > a button:hover{
+    color: #3ca0b8;
+    background-color: #fff;
+    transition: all 0.1s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .nav-extra >a button:active{
+    opacity: 0.7;
+    background-color: #3ca0b8;
+    color: #fff;
+  }
+  
+  main {
+    width: 100vw;
+    height: 150vh;
+  }
+  
+  /* Banner */
+  #hero {
+    height: 90vh;
+    width: 100vw;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url(/images/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hero-content {
+    position: absolute;
+  }
+  
+  .hero-content > h1 {
+    color: rgba(255, 255, 255, 0.621);
+    font-size: 55px;
+  }
+  
+  .hero-content > p {
+    color: rgba(255, 255, 255, 0.621);
+    font-size: 22px;
+  }
+  
+  .hero-content > button {
+    color: rgba(255, 255, 255, 0.621);
+    background-color:   #2553f9;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    border: 0px;
+    border-radius: 10px;
+    margin-top: 30px;
+    cursor: pointer;
+  }
+  
+  .hero-content > button:hover {
+    color:  #2553f9;
+    background-color:  rgba(255, 255, 255, 0.621);
+    transition: all 0.1s ease-in-out;
+  }
+  
+  .hero-content > button:active{
+    color: rgba(255, 255, 255, 0.621);
+    background-color:   #2553f9;
+  }
+  
+  /* Programs */
+  
+  #programs {
+    height: 70vh;
+    width: 100vw;
+    display: flex;
+  }
+  
+  .short {
+    height: 60vh;
+    width: 25vw;
+    background-color: #2553f9;
+    display: flex;
+    justify-content: center;
+    margin-right: 10px;
+  }
+  
+  .short:hover{
+    background-color: #1d389e;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .short > div > h4 {
+    font-size: 24px;
+    margin-top: 30px;
+    color: rgba(255, 255, 255, 0.728);
+    font-weight: 500;
+  }
+  
+  .short > div > p {
+    margin-top: 20px;
+    color: rgba(255, 255, 255, 0.728);
+  }
+  
+  .short > div > button {
+    border: 1px solid white;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.728);
+    margin-top: 20px;
+  }
+  .short > div > button:hover {
+    background-color: white;
+    color: rgba(0, 0, 0, 0.664);
+    cursor: pointer;
+    transition:all 0.5s ease-in-out;
+  }
+  .under {
+    height: 60vh;
+    width: 25vw;
+    background-color: #2553f9;
+    display: flex;
+    justify-content: center;
+    margin-right: 10px;
+   
+  }
+  
+  .under:hover{
+    background-color: #1d389e;
+    transition: all 0.5s ease-in-out;
+  } 
+  
+  .under > div > h4 {
+    font-size: 24px;
+    margin-top: 30px;
+    color: rgba(255, 255, 255, 0.728);
+    font-weight: 500;
+  }
+  
+  
+  .under > div > p {
+    margin-top: 20px;
+    color: rgba(255, 255, 255, 0.728);
+  }
+  
+  
+  .under > div > button {
+    border: 1px solid white;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.728);
+    margin-top: 35px;
+  }
+  .under > div > button:hover {
+    background-color: white;
+    color: rgba(0, 0, 0, 0.664);
+    cursor: pointer;
+    transition:all 0.1s ease-in-out;
+  }
+  .masters {
+    height: 60vh;
+    width: 25vw;
+    background-color: #2553f9;
+    display: flex;
+    justify-content: center;
+    margin-right: 10px;
+  }
+  
+  .masters:hover{
+    background-color: #1d389e;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .masters > div > h4{
+    font-size: 24px;
+    margin-top: 30px;
+    color: rgba(255, 255, 255, 0.728);
+    font-weight: 500;
+  
+  }
+  
+  .masters > div > p {
+    margin-top: 20px;
+    color: rgba(255, 255, 255, 0.728);
+  }
+  
+  .masters > div > button {
+    border: 1px solid white;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.728);
+    margin-top: 52px;
+  }
+  
+  .masters > div > button:hover{
+    background-color: white;
+    color: rgba(0, 0, 0, 0.664);
+    cursor: pointer;
+    transition:all 0.5s ease-in-out;
+  
+  }
+  
+  .professor {
+    height: 60vh;
+    background-color: #2553f9;
+    display: flex;
+    justify-content: center;
+    margin-right: 10px;
+    width: 25vw;
+  }
+  
+  .professor:hover{
+    /* background-color: burlywood; */
+    transition: all 0.5s ease-in-out;
+    background-color: #1d389e;
+  
+  }
+  
+  .professor > div > h4 {
+    font-size: 24px;
+    margin-top: 30px;
+    color: rgba(255, 255, 255, 0.728);
+    font-weight: 500;
+  }
+  
+  .professor > div > p {
+    margin-top: 20px;
+    color: rgba(255, 255, 255, 0.728);
+  }
+  
+  .professor > div > button {
+    border: 1px solid white;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.728);
+    margin-top: 32px;
+  }
+  
+  .professor > div > button:hover{
+    background-color: white;
+    color: rgba(0, 0, 0, 0.664);
+    cursor: pointer;
+    transition:all 0.5s ease-in-out;
+  }
+
+  .webdev > div img{
+    flex: 1;
+    width: 25vw;
+    height: 50vh;
+    border-radius: 50%;
+  }
+
+  .fig {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 20px;
+    color:  #1d389e;
+  }
+
+  .long {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #1d389e;
+  }
+
+  .long > h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+  }
+
+  .long > p {
+    font-size: large;
+    margin-bottom: 13px;
+  }
+
+  .long > h4 {
+    font-size:20px ;
+  }
+
+  #It{
+    height: 70vh;
+    width: 100vw;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+      url(/images/courses.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    
+  }
+
+  .Itcontent > h1{
+    color: rgba(255, 255, 255, 0.621);
+    font-size: 40px;
+  }
+
+  .Itcontent > p{
+    color: rgba(255, 255, 255, 0.621);
+    font-size: 20px;
+    margin-top: 10px;
+  }
+
+  .Itcontent > button{
+    border: 1px solid white;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.728);
+    margin-top: 20px;
+  }
+
+  .Itcontent > button:hover{
+    background-color: white;
+    color: rgba(0, 0, 0, 0.664);
+    cursor: pointer;
+    transition:all 0.1s ease-in-out;
+  }
+
+  
+  .Itcontent > button:active{
+    background-color:rgba(255, 255, 255, 0.728);
+    color: white;
+  }
+  
+  #shortcourses{
+    height: 70vh;
+    width: 100vw;
+    display: flex;
+  }
+
+  .disturb{
+    width: 100vw;
+    height: 70.5px;
+    background-color: black;
+
+  }
+
+
+
+
+
+
+ 
+
+  
+
+
+  
+  
