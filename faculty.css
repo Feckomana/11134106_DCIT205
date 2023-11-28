@@ -4,7 +4,7 @@
     box-sizing: border-box;
   }
   body {
-    background-color: white;
+    background-color: blue;
   }
   header {
     max-height: 70px;
@@ -33,7 +33,7 @@
     height: 70px;
     flex-grow: 0.5;
     margin-left: 50px;
-    /* background-color: blue; */
+    
   }
   
   header > .nav-links nav ul {
@@ -56,7 +56,7 @@
   
   header > .nav-links nav ul li a {
     text-decoration: none;
-    color: #112f98;
+    color: #142f98;
     font-family: Montserrat;
     font-size: 15px;
     font-style: normal;
@@ -76,7 +76,7 @@
   }
   
   .nav-extra > input {
-    border: 1px solid #3ca0b8;
+    border: 1px solid #3cb0b8;
     background-color: rgba(217, 217, 217, 0);
     padding-top: 10px;
     padding-bottom: 10px;
@@ -92,23 +92,23 @@
     padding-right: 25px;
     margin-left: 15px;
     border-radius: 30px;
-    background-color: #3ca0b8;
+    background-color: #3cb0b8;
     flex-shrink: 0;
-    border: 2px solid #3ca0b8;
-    color: #fff;
+    border: 2px solid #3cb0b8;
+    color:red;
   }
   
   .nav-extra > a button:hover{
     color: #3ca0b8;
-    background-color: #fff;
-    transition: all 0.1s ease-in-out;
+    background-color: transparent;
+    transition: all 0.05s ease-in-out;
     cursor: pointer;
   }
   
   .nav-extra >a button:active{
     opacity: 0.7;
     background-color: #3ca0b8;
-    color: #fff;
+    color:red;
   }
   
   main {
@@ -116,11 +116,11 @@
     height: 150vh;
   }
   
-  /* Banner */
+  
   #hero {
     height: 90vh;
     width: 100vw;
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
       url(/images/hero.jpg);
     background-size: cover;
     background-position: center;
@@ -135,13 +135,13 @@
   }
   
   .hero-content > h1 {
-    color: rgba(255, 255, 255, 0.621);
-    font-size: 55px;
+    color:white;
+    font-size: 60px;
   }
   
   .hero-content > p {
-    color: rgba(255, 255, 255, 0.621);
-    font-size: 22px;
+    color: ehite;
+    font-size: 20px;
   }
   
   .hero-content > button {
@@ -158,14 +158,14 @@
   }
   
   .hero-content > button:hover {
-    color:  #2553f9;
-    background-color:  rgba(255, 255, 255, 0.621);
+    color:  blue;
+    background-color: red;
     transition: all 0.1s ease-in-out;
   }
   
   .hero-content > button:active{
-    color: rgba(255, 255, 255, 0.621);
-    background-color:   #2553f9;
+    color: green;
+    background-color:   white;
   }
   
   /* Programs */
