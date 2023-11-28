@@ -38,9 +38,6 @@ Usage
 To run the website locally, use the following command:
 bashCopy code
 npm start 
-Visit http://localhost:3000 in your browser to access the website.
-Contributing
-We welcome contributions from the community! If you'd like to contribute to the project, please follow our Contribution Guidelines.
 What I've Learned
 Throughout the development of this project, I've gained valuable experience and skills, including:
 • Web development using HTML, CSS, and JavaScript.
